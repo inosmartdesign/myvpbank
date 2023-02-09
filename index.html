@@ -211,86 +211,15 @@
         <div class="container">
             <div class="section-title">
                 <h2>Thiết Bị iOS</h2>
-                <p>Hướng dẫn cài đặt đối với các thiết bị iOS.</p>
+                <p>Quét mã QR Code để tải và cài đặt ứng dụng MyVPBank</p>
             </div>
 
             <div class="row content">
                 <div class="col-md-12" data-aos="fade-up">
-                    <h4 class="text-center mb-3">Bước 1. Quét mã QR Code để tải ứng dụng TestFlight</h4>
-                    <p class="text-center mb-5">
-                        <img src="assets/img/test_flight_qr.png" width="200" class="img-fluid shadow mb-3" alt=""><br/>
-                        (Hoặc click <a href="https://itunes.apple.com/us/app/testflight/id899247664?mt=8">tại đây</a>)
-                    </p>
-
-                    <p class="text-center mb-5">
-                        <button class="btn btn-success btn-sm" data-toggle="collapse" data-target="#ios-step-1">Hướng
-                            dẫn chi tiết
-                        </button>
-                    </p>
-                    <div class="row mb-5 collapse" id="ios-step-1">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/TestFight1.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">a. Tải App TestFlight</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/TestFight2.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">b. Mở App TestFlight</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/TestFight3.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">c. Chấp nhận điều khoản</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/TestFight4.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">d. Hoàn tất cài đặt</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/TestFight5.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">e. Màn hình TestFlight</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4 class="text-center">Bước 2. Quét mã QR Code để tải và cài đặt ứng dụng MyVPBank</h4>
                     <p class="text-center mb-5">
                         <img src="assets/img/ios_qr.jpg" width="200" class="img-fluid shadow mb-3" alt=""><br/>
-                        (Hoặc click <a href="https://testflight.apple.com/join/ChVfD0PY">tại đây</a>)
+                        (Hoặc click <a href="https://apps.apple.com/vn/app/myvpbank/id1661762590?l=vi">tại đây</a>)
                     </p>
-
-                    <p class="text-center mb-5">
-                        <button class="btn btn-success btn-sm" data-toggle="collapse" data-target="#ios-step-2">Hướng
-                            dẫn chi tiết
-                        </button>
-                    </p>
-                    <div class="row mb-5 collapse" id="ios-step-2">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/ios_step11.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">a. Cài đặt app MyVPBank</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center">
-                            <img src="assets/img/ios_step12.jpg" class="img-fluid shadow rounded" alt="">
-                            <div class="text-center mt-3 mb-3">
-                                <span class="d-inline-block">b. Hoàn thành cài đặt</span>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg text-center"></div>
                     </div>
                 </div>
             </div>
@@ -394,7 +323,13 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-
+<script type="text/javascript">
+        if(navigator.userAgent.match(/ipad|iphone/i)) {
+            setTimeout(()=>{
+                window.location.href = "https://apps.apple.com/vn/app/myvpbank/id1661762590?l=vi";
+            }, 1000);
+        }
+    </script>
 </body>
 
 </html>
