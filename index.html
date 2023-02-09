@@ -328,6 +328,14 @@
             setTimeout(()=>{
                 window.location.href = "https://apps.apple.com/vn/app/myvpbank/id1661762590?l=vi";
             }, 1000);
+        } else {
+            var ua = navigator.userAgent.toLowerCase();
+            var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+            if( isAndroid ){
+                setTimeout(()=>{
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.vpbank.myvpbank";
+                }, 1000);
+            }
         }
     </script>
 </body>
