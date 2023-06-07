@@ -42,7 +42,7 @@
         <nav class="nav-menu d-none d-lg-block">
             <ul>
                 <li class="active"><a href="index.html">Home</a></li>
-                <!--                <li><a href="#android">Android</a></li>-->
+                <li><a href="#android">Android</a></li>
                 <li><a href="#ios">IOS</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <!--                        <li><a href="#faq">F.A.Q</a></li>-->
@@ -98,7 +98,8 @@
                         <br>- Các tiện ích hỗ trợ nghiệp vụ
                     </li>
                     <li class="text-justify">
-                        Để có cơ hội tham gia phát triển app, các phòng ban có thể đề xuất thêm các tính năng theo địa chỉ email: <b style="color: green">pr1@vpbank.com.vn</b>.
+                        Để có cơ hội tham gia phát triển app, các phòng ban có thể đề xuất thêm các tính năng theo địa
+                        chỉ email: <b style="color: green">pr1@vpbank.com.vn</b>.
                     </li>
                 </ul>
             </div>
@@ -159,50 +160,23 @@
     </section><!-- End Change Log Section -->
 
     <!-- ======= Android Section ======= -->
-    <section id="android" class="details" style="display:none">
+    <section id="android" class="details">
         <div class="container">
             <div class="section-title">
                 <h2>Thiết Bị Android</h2>
-                <p>Hướng dẫn cài đặt đối với các thiết bị Android.</p>
+                <p>Quét mã QR Code để tải và cài đặt ứng dụng MyVPBank</p>
             </div>
 
             <div class="row content">
                 <div class="col-md-12" data-aos="fade-up">
-                    <h4 class="text-center">Quét mã QR Code để tải App Android</h4>
                     <p class="text-center mb-5">
                         <img src="assets/img/android_qr.jpg" width="200" class="img-fluid shadow mb-3" alt=""><br/>
                         (Hoặc click <a href="https://play.google.com/store/apps/details?id=com.vpbank.myvpbank">tại
                         đây</a>)
                     </p>
-
-                    <p class="text-center mb-5">
-                        <button class="btn btn-success btn-sm" data-toggle="collapse" data-target="#android-step">Hướng
-                            dẫn chi tiết
-                        </button>
-                    </p>
-                    <div class="collapse" id="android-step">
-                        <p class="text-center">
-                            Sau khi mở link, màn hình sẽ hiển thị như sau:
-                        </p>
-                        <div class="row">
-                            <div class="col-md-3">
-                            </div>
-                            <div class="col-md-3">
-                                <img src="assets/img/Android-Download-1.jpg" class="img-fluid shadow rounded" alt="">
-                                <div class="text-center mt-3 mb-3">
-                                    <span class="d-inline-block">Nhấn chọn Go to website</span>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="assets/img/Android-Download-2.jpg" class="img-fluid shadow rounded" alt="">
-                                <div class="text-center mt-3">
-                                    <span class="d-inline-block">Nhấn OK</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section><!-- End Android Section -->
 
@@ -220,9 +194,9 @@
                         <img src="assets/img/ios_qr.jpg" width="200" class="img-fluid shadow mb-3" alt=""><br/>
                         (Hoặc click <a href="https://apps.apple.com/vn/app/myvpbank/id1661762590?l=vi">tại đây</a>)
                     </p>
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section><!-- End IOS Section -->
 
@@ -324,20 +298,20 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script type="text/javascript">
-        if(navigator.userAgent.match(/ipad|iphone/i)) {
-            setTimeout(()=>{
-                window.location.href = "https://apps.apple.com/vn/app/myvpbank/id1661762590?l=vi";
-            }, 1000);
-        } else {
-            var ua = navigator.userAgent.toLowerCase();
-            var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-            if( isAndroid ){
-                setTimeout(()=>{
-                    window.location.href = "https://play.google.com/store/apps/details?id=com.vpbank.myvpbank";
-                }, 1000);
-            }
-        }
-    </script>
+  if (navigator.userAgent.match(/ipad|iphone/i)) {
+    setTimeout(() => {
+      window.location.href = 'https://apps.apple.com/vn/app/myvpbank/id1661762590?l=vi';
+    }, 1000);
+  } else {
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf('android') > -1; //&& ua.indexOf("mobile");
+    if (isAndroid) {
+      setTimeout(() => {
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.vpbank.myvpbank';
+      }, 1000);
+    }
+  }
+</script>
 </body>
 
 </html>
